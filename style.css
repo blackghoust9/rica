@@ -1,2 +1,25 @@
 @charset "UTF-8";
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+del {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+del:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+del > h1 {
+    display: none;
+}
+
+del#aparecer-nome:hover > h1 {
+    display: block;
+    color: rgb(255, 255, 255);
+    width: 140px;
+}
