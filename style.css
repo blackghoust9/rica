@@ -23,3 +23,11 @@ del#aparecer-nome:hover > h1 {
     color: rgb(255, 255, 255);
     width: 140px;
 }
+
+img.imagens-responsivas {
+    width: 100%;
+    max-width: 750px;
+    display: block;
+    margin: auto;
+}
+
