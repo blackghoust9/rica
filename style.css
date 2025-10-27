@@ -1,9 +1,122 @@
 @charset "UTF-8";
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* CORES */
+:root {
+  --amarelo: #fab400;
+  --vermelho: #fa1500;
+  --branco: #ffffff;
+  --preto-cinza: #353535;
+}
+
+/* BASE */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: justify;
+  background-color: var(--branco);
+  line-height: 1.5;
+
+  background-image: url('imagens/channels4_banner.jpg');
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+main {
+    background-color: white;
+    max-width: 990px;
+    padding: 10px;
+    margin: auto;
+    border: 5px solid rgb(226, 43, 43);
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgb(207, 209, 64);
+}
+
+header {
+  min-height: 150px;
+  text-align: center;
+  padding-top: 40px;
+
+    background-color: white;
+    max-width: 950px;
+    padding: 10px;
+    margin: auto;
+    border: 5px solid rgb(226, 43, 43);
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgb(207, 209, 64);
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: normal;
+  color: var(--preto-cinza);
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: var(--vermelho);
+  font-weight: bold;
+}
+
+a:visited {
+  color: darkred;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: var(--amarelo);
+}
+
+/* NAVEGAÇÃO */
+nav#links-criador {
+  text-align: center;
+  margin: 15px 0;
+}
+
+nav#links-criador a {
+  margin: 0 10px;
+
+  background-color: white;
+    max-width: 950px;
+    padding: 10px;
+    border: 5px solid rgb(226, 43, 43);
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgb(207, 209, 64);
+}
+
+/* IMAGENS */
+img.imagens-responsivas {
+  width: 100%;
+  max-width: 750px;
+  display: block;
+  margin: 15px auto;
+}
+
+p.desc-img,
+figcaption.desc-img {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* EFEITO DO <DEL> */
+
 
 del {
     display: inline-block;
@@ -25,39 +138,17 @@ del#aparecer-nome:hover > h1 {
     width: 140px;
 }
 
-img.imagens-responsivas {
-    width: 100%;
-    max-width: 750px;
-    display: block;
-    margin: auto;
+/* CENTRALIZA CONTEÚDO */
+.centro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px;
 }
 
-nav#links-criador {
-    margin-bottom: 8px;
+/* BOTÃO CLARO/ESCURO */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
-h2 {
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: red;
-    font-weight: bolder;
-}
-
-a:visited {
-    color: darkred;
-}
-
-a:hover {
-    color: brown;
-}
-
-a:active {
-    color: yellow;
-}
-
-p.desc-img {
-    text-align: center;
-}

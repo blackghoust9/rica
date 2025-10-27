@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Wikia do Rica Games</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+   </head>
+   <body>
+      <header>
+         <h1> <del id="aparecer-nome">pica</del> Rica Games / Queima Mídia Games / cara de psicopata </h1>
+         <h2>O melhor canal de games, antes. Agora não é mais!</h2>
+      </header>
+        <nav id="links-criador">
+            <a target="_blank" href="https://github.com/blackghoust9">GitHub do Criador</a>
+            <a target="_blank" href="https://beacons.ai/blackghoust9">Amontoado de Links</a>
+        </nav>
+      <main>
+         <img class="imagens-responsivas" src="imagens/rica-com-spike.png" alt="rica-com-spike">
+         <p class="desc-img">
+            <a href="https://www.youtube.com/watch?v=wFcnI-Q1mSs" target="_blank">
+            "Porcaria né Spike?"
+            </a>
+         </p>
+         <article class="centro">
+            <p>
+               Rica Games era um mero véio batuta que curtia videojogos e postava vídeos sobre esse tema desde 2013, o primeiro vídeo que ele aborda sobre jogos é do <a href="https://www.youtube.com/watch?v=fD1FzR8fNyw" target="_blank">uniboxing do game Billions: The Game</a>, que foi feito pela marca de desodorantes AXE. Sim, você não leu errado, e ainda bem que virou lost media, <a href="https://www.youtube.com/watch?v=FbcSuy3a_r8" target="_blank">e sobrou só isso do game atualmente.</a> Depois dessa, <a href="">começou</a> a postar várias gameplays de jogos de Arcade, SNES, Master System, e futuramente de Xbox 360, além de várias esquetes sobre o console que bate de frente com qualquer filme nacional produzido com dinheiro público, ele fazia até música melhor que a Pablo Vittar (<a href="https://youtube.com/shorts/jJXiC4UqSoM?si=pqQ-805q9SMfqXrd" target="_blank">Todos sobre essa frase</a>)
+            </p>
+            <p>Também é conhecido pela sua <em>Magnum Opus</em> publicado em 2 de junho de 2014 <a href="https://youtu.be/eSRgRVx9ZjQ?si=xZJs8-cynQlsu5Ao" target="_blank">"Xbox pra Filho Machão"</a>
+            </p>
+         </article>
+         <article class="centro">
+            <h1>O início do canal</h1>
+            <picture>
+               <img class="imagens-responsivas" src="imagens/rica-assustador.png" alt="Esse frame me da medo">
+               <p class="desc-img">Esse frame me dá muito medo
+                  <img width="15px" src="imagens/emoiji-medo-ver-3.png" alt="medo">
+               </p>
+            </picture>
+            <p>
+               Seu primeiro vídeo foi postado no dia 12 de fevereiro de 2013, intitulado de <a target="_blank" href="https://youtu.be/mKpvlT-VPmo?si=eKVUtJDHUksvfpny">"Sou Eu"</a>. Basicamente era ele tentando explicar que o canal não era fake e de como que ia posicionar a câmera enquanto estivesse gravando as gameplays. Ele também mostrou o seu arsenal de jogos.
+            </p>
+            <p>
+               A maioria dos seus vídeos eram de jogos retro via emuladores de NES/SNES e de PS1 e PS2, já que seu pc batata não tankava jogos poderosos daquela época (tipo um Crysis da vida, alguma coisa assim) e mesmo assim os jogos davam uns lags tão doidos que chegava a um ponto que o próprio pc do Rica <abbr title="CUIDADO: RISCO DE ATAQUE EPILÉTICO"><a href="https://youtu.be/mnHQo4gmpAA?t=305" target="_blank">transcendia a matéria umas 2050 vezes.</a></abbr>
+            </p>
+            <p>
+            </p>
+         </article>
+      </main>
+   </body>
+</html>
+
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --amarelo: #FAB400;
+    --vermelho: #FA1500;
+    --branco: #ffff;
+    --preto-cinza: #353535;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+header {
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > nav {
+    text-align: left;
+}
+
+del {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+del:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+del > h1 {
+    display: none;
+}
+
+del#aparecer-nome:hover > h1 {
+    display: block;
+    color: rgb(255, 255, 255);
+    width: 140px;
+}
+
+img.imagens-responsivas {
+    width: 100%;
+    max-width: 750px;
+    display: block;
+    margin: auto;
+}
+
+nav#links-criador {
+    margin-bottom: 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    font-weight: bolder;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color: yellow;
+}
+
+p.desc-img {
+    text-align: center;
+}
