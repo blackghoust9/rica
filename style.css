@@ -22,12 +22,36 @@ body {
   text-align: justify;
   background-color: var(--branco);
   line-height: 1.5;
+
+  background-image: url('imagens/channels4_banner.jpg');
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+main {
+    background-color: white;
+    max-width: 990px;
+    padding: 10px;
+    margin: auto;
+    border: 5px solid rgb(226, 43, 43);
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgb(207, 209, 64);
 }
 
 header {
   min-height: 150px;
   text-align: center;
   padding-top: 40px;
+
+    background-color: white;
+    max-width: 950px;
+    padding: 10px;
+    margin: auto;
+    border: 5px solid rgb(226, 43, 43);
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgb(207, 209, 64);
 }
 
 h1, h2 {
@@ -67,6 +91,13 @@ nav#links-criador {
 
 nav#links-criador a {
   margin: 0 10px;
+
+  background-color: white;
+    max-width: 950px;
+    padding: 10px;
+    border: 5px solid rgb(226, 43, 43);
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgb(207, 209, 64);
 }
 
 /* IMAGENS */
