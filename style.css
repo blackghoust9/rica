@@ -144,3 +144,11 @@ del#aparecer-nome:hover > h1 {
   margin: 0 auto;
   padding: 15px;
 }
+
+/* BOTÃO CLARO/ESCURO */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
