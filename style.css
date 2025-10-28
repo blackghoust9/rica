@@ -22,7 +22,6 @@ body {
   text-align: justify;
   background-color: var(--branco);
   line-height: 1.5;
-
   background-image: url('imagens/channels4_banner.jpg');
   background-position: center center;
   background-repeat: repeat;
@@ -31,27 +30,25 @@ body {
 }
 
 main {
-    background-color: white;
-    max-width: 990px;
-    padding: 10px;
-    margin: auto;
-    border: 5px solid rgb(226, 43, 43);
-    border-radius: 15px;
-    box-shadow: 5px 5px 8px rgb(207, 209, 64);
+  background-color: white;
+  max-width: 990px;
+  padding: 10px;
+  margin: 20px auto;
+  border: 5px solid rgb(226, 43, 43);
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px rgb(207, 209, 64);
 }
 
 header {
   min-height: 150px;
   text-align: center;
-  padding-top: 40px;
-
-    background-color: white;
-    max-width: 950px;
-    padding: 10px;
-    margin: auto;
-    border: 5px solid rgb(226, 43, 43);
-    border-radius: 15px;
-    box-shadow: 5px 5px 8px rgb(207, 209, 64);
+  padding: 40px 10px 10px 10px;
+  background-color: white;
+  max-width: 950px;
+  margin: 20px auto;
+  border: 5px solid rgb(226, 43, 43);
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px rgb(207, 209, 64);
 }
 
 h1, h2 {
@@ -71,17 +68,9 @@ a {
   font-weight: bold;
 }
 
-a:visited {
-  color: darkred;
-}
-
-a:hover {
-  color: brown;
-}
-
-a:active {
-  color: var(--amarelo);
-}
+a:visited { color: darkred; }
+a:hover { color: brown; }
+a:active { color: var(--amarelo); }
 
 /* NAVEGAÇÃO */
 nav#links-criador {
@@ -91,13 +80,11 @@ nav#links-criador {
 
 nav#links-criador a {
   margin: 0 10px;
-
   background-color: white;
-    max-width: 950px;
-    padding: 10px;
-    border: 5px solid rgb(226, 43, 43);
-    border-radius: 15px;
-    box-shadow: 5px 5px 8px rgb(207, 209, 64);
+  padding: 10px;
+  border: 3px solid rgb(226, 43, 43);
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgb(207, 209, 64);
 }
 
 /* IMAGENS */
@@ -116,26 +103,17 @@ figcaption.desc-img {
 }
 
 /* EFEITO DO <DEL> */
-
-
 del {
-    display: inline-block;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  color: transparent;
+  transition: 0.3s;
+  padding: 0 5px;
 }
 
 del:hover {
-    background-color: rgb(255, 255, 255);
-}
-
-del > h1 {
-    display: none;
-}
-
-del#aparecer-nome:hover > h1 {
-    display: block;
-    color: rgb(255, 255, 255);
-    width: 140px;
+  background-color: white;
+  color: black;
 }
 
 /* CENTRALIZA CONTEÚDO */
@@ -150,5 +128,33 @@ del#aparecer-nome:hover > h1 {
   position: fixed;
   top: 20px;
   right: 20px;
+  padding: 8px 16px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
 }
 
+/* TEMA ESCURO */
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode main,
+body.dark-mode header,
+body.dark-mode nav {
+  background-color: #1e1e1e;
+  border-color: #333;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode a {
+  color: #ff7777;
+}
+
+body.dark-mode a:hover {
+  color: #ffaa00;
+}
