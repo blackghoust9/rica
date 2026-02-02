@@ -75,6 +75,10 @@ abbr {
   text-decoration: underline;
 }
 
+abbr#tapa {
+  text-decoration: none;
+}
+
 /* LINKS */
 a {
   text-decoration: none;
